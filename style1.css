@@ -1,0 +1,56 @@
+.jobExperience {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+  }
+  .jobExperience > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  /**************************************************/
+  .jobExperience_header {
+    background: tomato;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .jobExperience_headerChild{
+      flex: 1 1 auto;
+  }
+
+/**************************************************/
+.jobExperience_body{
+    display: flex;
+    align-self: flex-start;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+.jobExperience_bodyChild{
+    flex: 1 1 auto;
+    align-items: stretch;
+}
+/**************************************************/
+  .jobExperience_footer {
+    background: lightgreen;
+    display: flex;
+    height: 11vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .jobExperience_footerChild{
+    flex:1 1 auto;
+    width: 10%;
+  }
+/***************************************************/
+  @media all and (max-width: 700px) { 
+    .jobExperience_footerChild{
+      width: 50%;
+      }    
+}
