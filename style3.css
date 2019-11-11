@@ -1,0 +1,37 @@
+.flexboxContainer{
+    display: flex;
+}
+.flexboxContainer{
+    flex-wrap: wrap;
+}
+.flexboxChild{
+    flex-grow: 1;
+    text-align: center;
+}
+/********************************/
+.flexboxChild1{
+    height: 25%;
+}
+.flexboxChild2{
+    height: 50%;
+}
+.flexboxChild3{
+    height: 75%;
+}
+.flexboxChild4{
+    height: 100%;
+}
+
+/********************************/
+.flexboxChild5{
+    width: 25%;
+}
+.flexboxChild6{
+    width: 50%;
+}
+.flexboxChild7{
+    width: 75%
+}
+.flexboxChild8{
+    width: 100%;
+}
