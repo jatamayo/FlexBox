@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style4.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>FlexBox</h2>
+
+    <!-- Documentation -->
+    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent1{
+            background-color: #916dd5;
+            display: flex;
+        }
+        .children1{
+            background-color: #d89cf6;
+        }
+    </style>
+    <h2 class="title">Container <b>FLEX</b></h2>
+    <div class="parent1">
+        <div class="children1">Div 1</div>
+        <div class="children1">Div 2</div>
+        <div class="children1">Div 3</div>
+        <div class="children1">Div 4</div>
+        <div class="children1">Div 5</div>
+    </div>
+    
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent2{
+            background-color: #333366;
+            display: flex;
+        }
+        .children2{
+            background-color: #eb4d55;
+        }
+        .children2_1{order:1}
+        .children2_2{order:3}
+        .children2_3{order:2}
+        .children2_4{order:5}
+        .children2_5{order:4}
+    </style>
+    <h2 class="title">Container <b>ORDER</b></h2>
+    <div class="parent2">
+        <div class="children2 children2_1">Div 1</div>
+        <div class="children2 children2_2">Div 2</div>
+        <div class="children2 children2_3">Div 3</div>
+        <div class="children2 children2_4">Div 4</div>
+        <div class="children2 children2_5">Div 5</div>
+    </div>
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent3{
+            background-color: #272727;
+            display: flex;
+            flex-direction: row-reverse;
+            /* row , row-reverse, column, column-reverse */
+        }
+        .children3{
+            background-color: #4f98ca;
+        }
+    </style>
+    <h2 class="title">Container <b>FLEX DIRECTION</b></h2>
+    <div class="parent3">
+        <div class="children3">Div 1</div>
+        <div class="children3">Div 2</div>
+        <div class="children3">Div 3</div>
+        <div class="children3">Div 4</div>
+        <div class="children3">Div 5</div>
+    </div>
+    
+
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent4{
+            background-color: #f6da63;
+            display: flex;
+        }
+        .children4{
+            background-color: #da2d2d;
+        }
+        .children4_1{flex-grow: 1;}
+        .children4_2{flex-grow: 1;}
+        .children4_3{flex-grow: 2;}
+        .children4_4{flex-grow: 2;}
+        .children4_5{flex-grow: 4;}
+    </style>
+    <h2 class="title">Container <b>FLEX GROW</b></h2>
+    <div class="parent4">
+        <div class="children4 children4_1">Div 1</div>
+        <div class="children4 children4_2">Div 2</div>
+        <div class="children4 children4_3">Div 3</div>
+        <div class="children4 children4_4">Div 4</div>
+        <div class="children4 children4_5">Div 5</div>
+    </div>
+    
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent5{
+            background-color: #c9d1d3;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .children5{
+            background-color: #00909e;
+        }
+        .children5_1{width: 250px;}
+        .children5_2{width: 250px;}
+        .children5_3{width: 250px;}
+        .children5_4{width: 250px;}
+        .children5_5{width: 250px;}
+    </style>
+    <h2 class="title">Container <b>FLEX WRAP</b></h2>
+    <div class="parent5">
+        <div class="children5 children5_1">Div 1</div>
+        <div class="children5 children5_2">Div 2</div>
+        <div class="children5 children5_3">Div 3</div>
+        <div class="children5 children5_4">Div 4</div>
+        <div class="children5 children5_5">Div 5</div>
+    </div>
+    
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent6{
+            background-color: #a34a28;
+            display: flex;
+            justify-content: space-evenly;
+            /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+        }
+        .children6{
+            background-color: #dfddc7;
+        }
+    </style>
+    <h2 class="title">Container <b>JUSTIFY CONTENT</b></h2>
+    <div class="parent6">
+        <div class="children6">Div 1</div>
+        <div class="children6">Div 2</div>
+        <div class="children6">Div 3</div>
+        <div class="children6">Div 4</div>
+        <div class="children6">Div 5</div>
+    </div>
+        
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent7{
+            background-color: #272343;
+            display: flex;
+            align-items:center;
+            /* flex-start, flex-end, center, stretch, baseline*/
+        }
+        .children7{
+            background-color: #e3f6f5;
+        }
+        .children7_1{height: 50px;}
+        .children7_2{height: 100px;}
+        .children7_3{height: 150px;}
+        .children7_4{height: 200px;}
+        .children7_5{height: 250px;}
+    </style>
+    <h2 class="title">Container <b>ALIGN ITEMS</b></h2>
+    <div class="parent7">
+        <div class="children7 children7_1">Div 1</div>
+        <div class="children7 children7_2">Div 2</div>
+        <div class="children7 children7_3">Div 3</div>
+        <div class="children7 children7_4">Div 4</div>
+        <div class="children7 children7_5">Div 5</div>
+    </div>
+
+    <!-- ********************************************************************************************* -->
+    <style>
+        .parent8{
+            height: 1000px;
+            background-color: #2d132c;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            /* flex-start, flex-end, center, stretch, baseline*/
+        }
+        .children8{
+            background-color: #ee4540;
+        }
+        .children8_1{height: 50px;}
+        .children8_2{height: 100px;}
+        .children8_3{height: 150px;}
+        .children8_4{height: 200px;}
+        .children8_5{height: 250px;}
+    </style>
+    <h2 class="title">Container <b>CENTER CENTER</b></h2>
+    <div class="parent8">
+        <div class="children8 children8_1">Div 1</div>
+        <div class="children8 children8_2">Div 2</div>
+        <div class="children8 children8_3">Div 3</div>
+        <div class="children8 children8_4">Div 4</div>
+        <div class="children8 children8_5">Div 5</div>
+    </div>
+    <br><br><br><br>
+</body>
+
+</html>
